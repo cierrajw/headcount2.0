@@ -30,7 +30,7 @@ class App extends Component {
     const newData = districts.findByName(userInput);
 
     this.setState({
-      districtData: newData
+      districtData: {...newData}
     });
   }
 

@@ -12,11 +12,10 @@ class Search extends Component{
     }
   }
 
-  handleSubmit(event){
+  handleSubmit = (event) => {
     event.preventDefault();
 
     this.props.searchData(this.state.district);
-
   }
 
   handleInput = (event) => {
@@ -44,7 +43,7 @@ class Search extends Component{
 }
 
 Search.propTypes = {
-  searchData: PropTypes.string
+  searchData: PropTypes.func
 }
 
 export default Search;
